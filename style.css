@@ -3,3 +3,7 @@
   color: Grey;
   border-radius: 8px;
 }
+
+.header {
+  margin:2px; padding: 20px; color: White;
+}
