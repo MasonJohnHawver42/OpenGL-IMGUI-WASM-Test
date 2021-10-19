@@ -1,7 +1,7 @@
 
 .main {
-  color: Grey;
-  border-radius: 8px;
+  color: Black;
+  margin:2px; padding: 20px; border-radius: 8px;
 }
 
 .header {
