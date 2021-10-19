@@ -8,5 +8,16 @@
 }
 
 .header {
+  background-color: White;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  background-image: url('assets/sshot1.jpg');
+  background-repeat: repeat-x;
+  height: 105px;
+}
+
+.title {
   margin:2px; padding: 20px; color: White;
+  text-shadow: 0px 0px 4px Black, 0px 0px 8px Black, 0px 0px 10px Black, 0px 0px 16px Black;
 }
