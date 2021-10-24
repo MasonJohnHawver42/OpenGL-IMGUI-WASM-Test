@@ -1,23 +1,74 @@
 
+.temple {
+  margin: 0px auto;
+    margin-top: 5%;
+  width : 600px;
+  display: block;
+}
+
 .main {
-  background-color: #373737;
-  margin: 20px auto;
+  background-color: Black;
+  margin: 0px auto;
   padding: 20px;
   border-radius: 20px;
-  width: 800px;
+  width: 90%;
 }
 
 .header {
-  background-color: White;
+  background-color: Green;
   margin: 20px;
   padding: 20px;
   border-radius: 6px;
-  background-image: url('assets/sshot1.jpg');
-  background-repeat: repeat-x;
-  height: 105px;
+  color: White;
+  /* background-image: url('assets/sshot1.jpg');
+  background-repeat: repeat-x; */
 }
 
 .title {
-  margin:2px; padding: 20px; color: White;
-  text-shadow: 0px 0px 4px Black, 0px 0px 8px Black, 0px 0px 10px Black, 0px 0px 16px Black;
+  margin:20px auto; padding: 2px;
+  text-align: center;
+  /* display: block; */
+  /* text-shadow: 0px 0px 8px Black; */
+}
+
+.container {
+  margin: auto;
+  padding: 0px;
+  height: 200px;
+}
+
+.collum {
+  background-color: Black;
+  padding: 20px;
+  height: 200px;
+  /* box-sizing: border-box; */
+}
+
+.collum-inside {
+  background-color: Green;
+  margin: 15px;
+  margin-top : 0px;
+  padding: 30px;
+  border-radius: 6px;
+  width: 0px;
+  height: 200px;
+}
+
+@font-face { font-family: Gemini; src: url('BD_Geminis.ttf'); }
+.greek_computer { font-family: Gemini; font-size: 4.2em; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.greek_gift {
+
+}
+
+.greek_gift:hover {
+  background-color: White;
+  color: green;
 }
