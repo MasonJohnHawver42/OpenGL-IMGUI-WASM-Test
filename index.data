@@ -1,0 +1,79 @@
+newmtl white
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+
+newmtl red
+Ka 0 0 0
+Kd 1 0 0
+Ks 0 0 0
+
+newmtl green
+Ka 0 0 0
+Kd 0 1 0
+Ks 0 0 0
+
+newmtl blue
+Ka 0 0 0
+Kd 0 0 1
+Ks 0 0 0
+
+newmtl light
+Ka 20 20 20
+Kd 1 1 1
+Ks 0 0 0
+#version 100
+attribute vec3 aPos;
+
+uniform mat4 model;
+uniform mat4 view;
+uniform mat4 projection;
+
+varying vec3 color;
+
+void main()
+{
+	gl_Position =  projection * view * model * vec4(aPos, 1.0);
+  color = aPos + 0.5;
+}
+#version 100
+
+precision mediump float;
+varying vec3 color;
+
+void main()
+{
+  gl_FragColor = vec4(color, 1.0);
+}
+mtllib cube.mtl
+
+v 0.000000 2.000000 2.000000
+v 0.000000 0.000000 2.000000
+v 2.000000 0.000000 2.000000
+v 2.000000 2.000000 2.000000
+v 0.000000 2.000000 0.000000
+v 0.000000 0.000000 0.000000
+v 2.000000 0.000000 0.000000
+v 2.000000 2.000000 0.000000
+# 8 vertices
+
+g front cube
+usemtl white
+f 1 2 3 4
+# two white spaces between 'back' and 'cube'
+g back  cube
+# expects white material
+f 8 7 6 5
+g right cube
+usemtl red
+f 4 3 7 8
+g top cube
+usemtl white
+f 5 1 4 8
+g left cube
+usemtl green
+f 5 6 2 1
+g bottom cube
+usemtl white
+f 2 6 7 3
+# 6 elements
